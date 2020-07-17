@@ -1,0 +1,58 @@
+/* Base Style */
+:root {
+  --main-color: #1a1814;
+  --accent-color: #cda45e;
+  --font-color: #e4e4e4;
+}
+
+* {
+  line-height: 1.6 !important;
+}
+
+nav {
+  background-color: var(--main-color) !important;
+}
+
+button {
+  border-color: var(--main-color) !important;
+}
+
+body {
+  background-color: var(--main-color) !important;
+}
+
+body img {
+  width: 100%;
+}
+
+.nav-item {
+  list-style: none;
+}
+
+.top-menu {
+  text-align: center;
+}
+
+footer {
+  text-align: center;
+  padding-bottom: 40px;
+}
+
+p,
+a {
+  color: var(--font-color) !important;
+}
+
+/* Jumbotron */
+.jumbotron {
+  background-image: url('/assets/img/bg-accent.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 360px;
+}
+
+/* Menu Animation */
+.menu-hotpizza {
+  display: none;
+}
