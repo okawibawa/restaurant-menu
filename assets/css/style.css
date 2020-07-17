@@ -1,3 +1,6 @@
+/* Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700;800&display=swap');
+
 /* Base Style */
 :root {
   --main-color: #1a1814;
@@ -29,6 +32,10 @@ body img {
   list-style: none;
 }
 
+.nav-link {
+  font-family: 'Playfair Display', Arial, Helvetica, sans-serif;
+}
+
 .top-menu {
   text-align: center;
 }
@@ -43,16 +50,124 @@ a {
   color: var(--font-color) !important;
 }
 
+h1,
+h4,
+.price p {
+  color: var(--accent-color) !important;
+}
+
+h1 {
+  font-family: 'Playfair Display', Arial, Helvetica, sans-serif;
+  font-size: 2.4rem !important;
+  margin-bottom: 20px !important;
+}
+
+.sub-title {
+  color: var(--font-color);
+  margin-bottom: 0 !important;
+  text-transform: uppercase;
+}
+
+h4 {
+  font-weight: bold !important;
+}
+
+.food-desc {
+  font-family: 'Playfair Display', Arial, Helvetica, sans-serif;
+  font-style: italic;
+  font-size: 14px;
+}
+
+.menu {
+  position: relative;
+}
+
+.price {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.active-link {
+  color: var(--accent-color) !important;
+}
+
 /* Jumbotron */
 .jumbotron {
   background-image: url('/assets/img/bg-accent.png');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  height: 360px;
+  height: 400px;
+}
+
+.jumbotron-reverse {
+  background-image: url('/assets/img/bg-accent-reverse.png');
+}
+
+/* Footer */
+.footer-logo img {
+  width: 200px;
+  margin-bottom: 20px;
+}
+
+footer p {
+  width: 100%;
+  max-width: 690px;
+  margin: auto;
+  margin-bottom: 20px;
+}
+
+.socials a:nth-child(2) {
+  margin: 0 20px;
+}
+
+.socials a ion-icon:hover {
+  color: var(--accent-color);
 }
 
 /* Menu Animation */
-.menu-hotpizza {
+.menus {
   display: none;
+}
+
+.menus.active {
+  display: block;
+}
+
+/* Media Queries */
+@media screen and (min-width: 992px) {
+  .nav-link-nav {
+    text-transform: uppercase;
+    margin-left: 25px !important;
+  }
+
+  .top-menu {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .titles {
+    text-align: left;
+  }
+
+  .nav-link {
+    margin-left: 25px;
+  }
+
+  .titles {
+    display: flex;
+    align-items: center;
+  }
+
+  .titles h5 {
+    margin-right: 10px;
+  }
+
+  .titles .line {
+    width: 120px;
+    height: 2px;
+    background-color: var(--accent-color);
+  }
 }

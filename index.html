@@ -16,7 +16,7 @@
       crossorigin="anonymous"
     />
 
-    <title>Hello, world!</title>
+    <title>Sunken Bar</title>
   </head>
   <body>
     <!-- Start: Nav -->
@@ -37,16 +37,16 @@
         <div class="collapse navbar-collapse" id="navbarNav">
           <ul class="navbar-nav ml-auto">
             <li class="nav-item active">
-              <a class="nav-link" href="#">Topix Asia</a>
+              <a class="nav-link-nav" href="#">Topix Asia</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Sunken Bar</a>
+              <a class="nav-link-nav" href="#">Sunken Bar</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Skylight</a>
+              <a class="nav-link-nav" href="#">Skylight</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Room Service</a>
+              <a class="nav-link-nav" href="#">Room Service</a>
             </li>
           </ul>
         </div>
@@ -61,269 +61,417 @@
     <!-- End: Jumbotron -->
 
     <!-- Start: Menu Food Section -->
-    <section>
+    <section class="mb-5">
       <div class="container">
-        <div class="top-menu mb-5">
+        <div class="top-menu mb-4">
           <div class="menu-title">
-            <div class="sub-title">
-              <h4>Our Menu</h4>
-              <span class="line"></span>
+            <div class="titles">
+              <h5 class="sub-title">Our Menu</h5>
+              <div class="line"></div>
             </div>
             <h1>Popular Foods</h1>
           </div>
           <div class="menu-options">
             <ul class="nav-list d-flex justify-content-between p-0">
-              <li class="nav-item"><a href="#" id="fast" class="nav-link p-1">Fast Food</a></li>
-              <li class="nav-item"><a href="#" id="pizza" class="nav-link p-1">Hot Pizza</a></li>
-              <li class="nav-item"><a href="#" id="asian" class="nav-link p-1">Asian Food</a></li>
-              <li class="nav-item"><a href="#" id="raw" class="nav-link p-1">Raw Meat</a></li>
+              <li class="nav-item">
+                <a href="#" id="link-food-one" class="link-food nav-link active-link p-1">Fast Food</a>
+              </li>
+              <li class="nav-item"><a href="#" id="link-food-two" class="link-food nav-link p-1">Hot Pizza</a></li>
+              <li class="nav-item"><a href="#" id="link-food-three" class="link-food nav-link p-1">Asian Food</a></li>
+              <li class="nav-item"><a href="#" id="link-food-four" class="link-food nav-link p-1">Raw Meat</a></li>
             </ul>
           </div>
         </div>
 
-        <!-- Start: Fast Food -->
-        <div class="menu-fastfood" id="fastfood">
-          <!-- Start: Left Menu -->
-          <div class="left">
-            <div class="menu">
-              <h6>Gado-Gado</h6>
-              <p>Mix steamed vegetables, and rice cake serred with peanut sauce and cracker</p>
-              <div class="price">
-                <p>55K</p>
+        <!-- Start: Menus Food One -->
+        <div class="menus active" id="foodOne">
+          <div class="d-lg-flex align-items-lg-center justify-content-lg-between">
+            <!-- Start: Left Menu -->
+            <div class="left col-lg-5 px-0">
+              <div class="menu">
+                <h4>Gado-Gado</h4>
+                <p class="food-desc">Mix steamed vegetables, and rice cake serred with peanut sauce and cracker</p>
+                <div class="price">
+                  <h4>55K</h4>
+                </div>
+              </div>
+              <div class="menu">
+                <h4>Gado-Gado</h4>
+                <p class="food-desc">Mix steamed vegetables, and rice cake serred with peanut sauce and cracker</p>
+                <div class="price">
+                  <h4>55K</h4>
+                </div>
               </div>
             </div>
-            <div class="menu">
-              <h6>Gado-Gado</h6>
-              <p>Mix steamed vegetables, and rice cake serred with peanut sauce and cracker</p>
-              <div class="price">
-                <p>55K</p>
-              </div>
-            </div>
-          </div>
-          <!-- End: Left Menu -->
+            <!-- End: Left Menu -->
 
-          <!-- Start: Right Menu -->
-          <div class="right">
-            <div class="menu">
-              <h6>Tom Yung Kung</h6>
-              <p>Thai seafood soup with button mushroom and kaffir line leaf</p>
-              <div class="price">
-                <p>55K</p>
+            <!-- Start: Right Menu -->
+            <div class="right col-lg-5 px-0">
+              <div class="menu">
+                <h4>Tom Yung Kung</h4>
+                <p class="food-desc">Thai seafood soup with button mushroom and kaffir line leaf</p>
+                <div class="price">
+                  <h4>55K</h4>
+                </div>
+              </div>
+              <div class="menu">
+                <h4>Mushroom Cream Soup</h4>
+                <p class="food-desc">Served with garlic bread</p>
+                <div class="price">
+                  <h4>55K</h4>
+                </div>
               </div>
             </div>
-            <div class="menu">
-              <h6>Mushroom Cream Soup</h6>
-              <p>Served with garlic bread</p>
-              <div class="price">
-                <p>55K</p>
-              </div>
-            </div>
+            <!-- End: Right Menu -->
           </div>
-          <!-- End: Right Menu -->
         </div>
-        <!-- End: Fast Food -->
+        <!-- End: Menus Food One -->
 
-        <!-- Start: Hot Pizza -->
-        <div class="menu-hotpizza" id="hotpizza">
-          <!-- Start: Left Menu -->
-          <div class="left">
-            <div class="menu">
-              <h6>Pizza Pepperoni</h6>
-              <p>Mix steamed vegetables, and rice cake serred with peanut sauce and cracker</p>
-              <div class="price">
-                <p>55K</p>
+        <!-- Start: Menus Food Two -->
+        <div class="menus" id="foodTwo">
+          <div class="d-lg-flex align-items-lg-center justify-content-lg-between">
+            <!-- Start: Left Menu -->
+            <div class="left col-lg-5 px-0">
+              <div class="menu">
+                <h4>Pizza Pepperoni</h4>
+                <p class="food-desc">Mix steamed vegetables, and rice cake serred with peanut sauce and cracker</p>
+                <div class="price">
+                  <h4>55K</h4>
+                </div>
+              </div>
+              <div class="menu">
+                <h4>Hawaiian Pizza</h4>
+                <p class="food-desc">Mix steamed vegetables, and rice cake serred with peanut sauce and cracker</p>
+                <div class="price">
+                  <h4>55K</h4>
+                </div>
               </div>
             </div>
-            <div class="menu">
-              <h6>Hawaiian Pizza</h6>
-              <p>Mix steamed vegetables, and rice cake serred with peanut sauce and cracker</p>
-              <div class="price">
-                <p>55K</p>
-              </div>
-            </div>
-          </div>
-          <!-- End: Left Menu -->
+            <!-- End: Left Menu -->
 
-          <!-- Start: Right Menu -->
-          <div class="right">
-            <div class="menu">
-              <h6>Tuna Pizza</h6>
-              <p>Thai seafood soup with button mushroom and kaffir line leaf</p>
-              <div class="price">
-                <p>55K</p>
+            <!-- Start: Right Menu -->
+            <div class="right col-lg-5 px-0">
+              <div class="menu">
+                <h4>Tuna Pizza</h4>
+                <p class="food-desc">Thai seafood soup with button mushroom and kaffir line leaf</p>
+                <div class="price">
+                  <h4>55K</h4>
+                </div>
+              </div>
+              <div class="menu">
+                <h4>Beef Pizza</h4>
+                <p class="food-desc">Mix steamed vegetables, and rice cake serred with peanut sauce and cracker</p>
+                <div class="price">
+                  <h4>55K</h4>
+                </div>
               </div>
             </div>
-            <div class="menu">
-              <h6>Beef Pizza</h6>
-              <p>Mix steamed vegetables, and rice cake serred with peanut sauce and cracker</p>
-              <div class="price">
-                <p>55K</p>
-              </div>
-            </div>
+            <!-- End: Right Menu -->
           </div>
-          <!-- End: Right Menu -->
         </div>
-        <!-- Ends: Hot Pizza -->
+        <!-- Ends: Menus Food Two -->
 
-        <!-- Start: Asian Food -->
-        <div class="menu-asianfood" id="asianfood">
-          <!-- Start: Left Menu -->
-          <div class="left">
-            <div class="menu">
-              <h6>Pizza Pepperoni</h6>
-              <p>Mix steamed vegetables, and rice cake serred with peanut sauce and cracker</p>
-              <div class="price">
-                <p>55K</p>
+        <!-- Start: Menus Food Three -->
+        <div class="menus" id="foodThree">
+          <div class="d-lg-flex align-items-lg-center justify-content-lg-between">
+            <!-- Start: Left Menu -->
+            <div class="left col-lg-5 px-0">
+              <div class="menu">
+                <h4>Nasi Goreng</h4>
+                <p class="food-desc">Mix steamed vegetables, and rice cake serred with peanut sauce and cracker</p>
+                <div class="price">
+                  <h4>55K</h4>
+                </div>
+              </div>
+              <div class="menu">
+                <h4>Gado-Gado</h4>
+                <p class="food-desc">Mix steamed vegetables, and rice cake serred with peanut sauce and cracker</p>
+                <div class="price">
+                  <h4>55K</h4>
+                </div>
               </div>
             </div>
-            <div class="menu">
-              <h6>Gado-Gado</h6>
-              <p>Mix steamed vegetables, and rice cake serred with peanut sauce and cracker</p>
-              <div class="price">
-                <p>55K</p>
-              </div>
-            </div>
-          </div>
-          <!-- End: Left Menu -->
+            <!-- End: Left Menu -->
 
-          <!-- Start: Right Menu -->
-          <div class="right">
-            <div class="menu">
-              <h6>Tom Yung Kung</h6>
-              <p>Thai seafood soup with button mushroom and kaffir line leaf</p>
-              <div class="price">
-                <p>55K</p>
+            <!-- Start: Right Menu -->
+            <div class="right col-lg-5 px-0">
+              <div class="menu">
+                <h4>Tom Yung Kung</h4>
+                <p class="food-desc">Thai seafood soup with button mushroom and kaffir line leaf</p>
+                <div class="price">
+                  <h4>55K</h4>
+                </div>
+              </div>
+              <div class="menu">
+                <h4>Gado-Gado</h4>
+                <p class="food-desc">Mix steamed vegetables, and rice cake serred with peanut sauce and cracker</p>
+                <div class="price">
+                  <h4>55K</h4>
+                </div>
               </div>
             </div>
-            <div class="menu">
-              <h6>Gado-Gado</h6>
-              <p>Mix steamed vegetables, and rice cake serred with peanut sauce and cracker</p>
-              <div class="price">
-                <p>55K</p>
-              </div>
-            </div>
+            <!-- End: Right Menu -->
           </div>
-          <!-- End: Right Menu -->
         </div>
-        <!-- Ends: Asian Food -->
+        <!-- Ends: Menus Food Three -->
 
-        <!-- Start: Raw Meat -->
-        <div class="menu-rawmeat" id="rawmeat">
-          <!-- Start: Left Menu -->
-          <div class="left">
-            <div class="menu">
-              <h6>Pizza Pepperoni</h6>
-              <p>Mix steamed vegetables, and rice cake serred with peanut sauce and cracker</p>
-              <div class="price">
-                <p>55K</p>
+        <!-- Start: Menus Food Four -->
+        <div class="menus" id="foodFour">
+          <div class="d-lg-flex align-items-lg-center justify-content-lg-between">
+            <!-- Start: Left Menu -->
+            <div class="left col-lg-5 px-0">
+              <div class="menu">
+                <h4>Raw Meat</h4>
+                <p class="food-desc">Mix steamed vegetables, and rice cake serred with peanut sauce and cracker</p>
+                <div class="price">
+                  <h4>55K</h4>
+                </div>
+              </div>
+              <div class="menu">
+                <h4>Gado-Gado</h4>
+                <p class="food-desc">Mix steamed vegetables, and rice cake serred with peanut sauce and cracker</p>
+                <div class="price">
+                  <h4>55K</h4>
+                </div>
               </div>
             </div>
-            <div class="menu">
-              <h6>Gado-Gado</h6>
-              <p>Mix steamed vegetables, and rice cake serred with peanut sauce and cracker</p>
-              <div class="price">
-                <p>55K</p>
-              </div>
-            </div>
-          </div>
-          <!-- End: Left Menu -->
+            <!-- End: Left Menu -->
 
-          <!-- Start: Right Menu -->
-          <div class="right">
-            <div class="menu">
-              <h6>Tom Yung Kung</h6>
-              <p>Thai seafood soup with button mushroom and kaffir line leaf</p>
-              <div class="price">
-                <p>55K</p>
+            <!-- Start: Right Menu -->
+            <div class="right col-lg-5 px-0">
+              <div class="menu">
+                <h4>Tom Yung Kung</h4>
+                <p class="food-desc">Thai seafood soup with button mushroom and kaffir line leaf</p>
+                <div class="price">
+                  <h4>55K</h4>
+                </div>
+              </div>
+              <div class="menu">
+                <h4>Gado-Gado</h4>
+                <p class="food-desc">Mix steamed vegetables, and rice cake serred with peanut sauce and cracker</p>
+                <div class="price">
+                  <h4>55K</h4>
+                </div>
               </div>
             </div>
-            <div class="menu">
-              <h6>Gado-Gado</h6>
-              <p>Mix steamed vegetables, and rice cake serred with peanut sauce and cracker</p>
-              <div class="price">
-                <p>55K</p>
-              </div>
-            </div>
+            <!-- End: Right Menu -->
           </div>
-          <!-- End: Right Menu -->
         </div>
-        <!-- Ends: Raw Meat -->
+        <!-- Ends: Menus Food Four -->
       </div>
     </section>
     <!-- End: Menu Food Section -->
 
     <!-- Start: Jumbotron -->
-    <div class="jumbotron jumbotron-fluid">
+    <div class="jumbotron jumbotron-reverse jumbotron-fluid">
       <div class="container"></div>
     </div>
     <!-- End: Jumbotron -->
 
     <!-- Start: Menu Beverages Section -->
-    <section>
+    <section class="mb-5">
       <div class="container">
-        <div class="top-menu mb-5">
+        <div class="top-menu mb-4">
           <div class="menu-title">
-            <div class="sub-title">
-              <h4>Our Menu</h4>
+            <div class="titles">
+              <h5 class="sub-title">Our Menu</h5>
               <span class="line"></span>
             </div>
             <h1>Popular Beverages</h1>
           </div>
           <div class="menu-options">
             <ul class="nav-list d-flex justify-content-between p-0">
-              <li class="nav-item"><a href="#" class="nav-link p-1">Fast Food</a></li>
-              <li class="nav-item"><a href="#" class="nav-link p-1">Hot Pizza</a></li>
-              <li class="nav-item"><a href="#" class="nav-link p-1">Asian Food</a></li>
-              <li class="nav-item"><a href="#" class="nav-link p-1">Raw Meet</a></li>
+              <li class="nav-item">
+                <a href="#" id="link-bev-one" class="bev-link active-link nav-link p-1">Beers</a>
+              </li>
+              <li class="nav-item"><a href="#" id="link-bev-two" class="nav-link p-1">Cocktail</a></li>
+              <li class="nav-item"><a href="#" id="link-bev-three" class="nav-link p-1">Whiskey</a></li>
+              <li class="nav-item"><a href="#" id="link-bev-four" class="nav-link p-1">Water</a></li>
             </ul>
           </div>
         </div>
 
-        <div class="menu-fastood">
-          <!-- Start: Left Menu -->
-          <div class="left">
-            <div class="menu">
-              <h6>Gado-Gado</h6>
-              <p>Mix steamed vegetables, and rice cake serred with peanut sauce and cracker</p>
-              <div class="price">
-                <p>55K</p>
+        <!-- Start: Menus Beverages One -->
+        <div class="menus active" id="bevOne">
+          <div class="d-lg-flex align-items-lg-center justify-content-lg-between">
+            <!-- Start: Left Menu -->
+            <div class="left col-lg-5 px-0">
+              <div class="menu">
+                <h4>Gado-Gado</h4>
+                <p class="food-desc">Mix steamed vegetables, and rice cake serred with peanut sauce and cracker</p>
+                <div class="price">
+                  <h4>55K</h4>
+                </div>
+              </div>
+              <div class="menu">
+                <h4>Gado-Gado</h4>
+                <p class="food-desc">Mix steamed vegetables, and rice cake serred with peanut sauce and cracker</p>
+                <div class="price">
+                  <h4>55K</h4>
+                </div>
               </div>
             </div>
-            <div class="menu">
-              <h6>Gado-Gado</h6>
-              <p>Mix steamed vegetables, and rice cake serred with peanut sauce and cracker</p>
-              <div class="price">
-                <p>55K</p>
-              </div>
-            </div>
-          </div>
-          <!-- End: Left Menu -->
+            <!-- End: Left Menu -->
 
-          <!-- Start: Right Menu -->
-          <div class="right">
-            <div class="menu">
-              <h6>Tom Yung Kung</h6>
-              <p>Thai seafood soup with button mushroom and kaffir line leaf</p>
-              <div class="price">
-                <p>55K</p>
+            <!-- Start: Right Menu -->
+            <div class="right col-lg-5 px-0">
+              <div class="menu">
+                <h4>Tom Yung Kung</h4>
+                <p class="food-desc">Thai seafood soup with button mushroom and kaffir line leaf</p>
+                <div class="price">
+                  <h4>55K</h4>
+                </div>
+              </div>
+              <div class="menu">
+                <h4>Mushroom Cream Soup</h4>
+                <p class="food-desc">Served with garlic bread</p>
+                <div class="price">
+                  <h4>55K</h4>
+                </div>
               </div>
             </div>
-            <div class="menu">
-              <h6>Gado-Gado</h6>
-              <p>Mix steamed vegetables, and rice cake serred with peanut sauce and cracker</p>
-              <div class="price">
-                <p>55K</p>
-              </div>
-            </div>
+            <!-- End: Right Menu -->
           </div>
-          <!-- End: Right Menu -->
         </div>
+        <!-- End: Menus Beverages One -->
+
+        <!-- Start: Menus Beverages Two -->
+        <div class="menus" id="bevTwo">
+          <div class="d-lg-flex align-items-lg-center justify-content-lg-between">
+            <!-- Start: Left Menu -->
+            <div class="left col-lg-5 px-0">
+              <div class="menu">
+                <h4>Pizza Pepperoni</h4>
+                <p class="food-desc">Mix steamed vegetables, and rice cake serred with peanut sauce and cracker</p>
+                <div class="price">
+                  <h4>55K</h4>
+                </div>
+              </div>
+              <div class="menu">
+                <h4>Hawaiian Pizza</h4>
+                <p class="food-desc">Mix steamed vegetables, and rice cake serred with peanut sauce and cracker</p>
+                <div class="price">
+                  <h4>55K</h4>
+                </div>
+              </div>
+            </div>
+            <!-- End: Left Menu -->
+
+            <!-- Start: Right Menu -->
+            <div class="right col-lg-5 px-0">
+              <div class="menu">
+                <h4>Tuna Pizza</h4>
+                <p class="food-desc">Thai seafood soup with button mushroom and kaffir line leaf</p>
+                <div class="price">
+                  <h4>55K</h4>
+                </div>
+              </div>
+              <div class="menu">
+                <h4>Beef Pizza</h4>
+                <p class="food-desc">Mix steamed vegetables, and rice cake serred with peanut sauce and cracker</p>
+                <div class="price">
+                  <h4>55K</h4>
+                </div>
+              </div>
+            </div>
+            <!-- End: Right Menu -->
+          </div>
+        </div>
+        <!-- Ends: Menus Beverages Two -->
+
+        <!-- Start: Menus Beverages Three -->
+        <div class="menus" id="bevThree">
+          <div class="d-lg-flex align-items-lg-center justify-content-lg-between">
+            <!-- Start: Left Menu -->
+            <div class="left col-lg-5 px-0">
+              <div class="menu">
+                <h4>Nasi Goreng</h4>
+                <p class="food-desc">Mix steamed vegetables, and rice cake serred with peanut sauce and cracker</p>
+                <div class="price">
+                  <h4>55K</h4>
+                </div>
+              </div>
+              <div class="menu">
+                <h4>Gado-Gado</h4>
+                <p class="food-desc">Mix steamed vegetables, and rice cake serred with peanut sauce and cracker</p>
+                <div class="price">
+                  <h4>55K</h4>
+                </div>
+              </div>
+            </div>
+            <!-- End: Left Menu -->
+
+            <!-- Start: Right Menu -->
+            <div class="right col-lg-5 px-0">
+              <div class="menu">
+                <h4>Tom Yung Kung</h4>
+                <p class="food-desc">Thai seafood soup with button mushroom and kaffir line leaf</p>
+                <div class="price">
+                  <h4>55K</h4>
+                </div>
+              </div>
+              <div class="menu">
+                <h4>Gado-Gado</h4>
+                <p class="food-desc">Mix steamed vegetables, and rice cake serred with peanut sauce and cracker</p>
+                <div class="price">
+                  <h4>55K</h4>
+                </div>
+              </div>
+            </div>
+            <!-- End: Right Menu -->
+          </div>
+        </div>
+        <!-- Ends: Menus Beverages Three -->
+
+        <!-- Start: Menus Beverages Four -->
+        <div class="menus" id="bevFour">
+          <div class="d-lg-flex align-items-lg-center justify-content-lg-between">
+            <!-- Start: Left Menu -->
+            <div class="left col-lg-5 px-0">
+              <div class="menu">
+                <h4>Raw Meat</h4>
+                <p class="food-desc">Mix steamed vegetables, and rice cake serred with peanut sauce and cracker</p>
+                <div class="price">
+                  <h4>55K</h4>
+                </div>
+              </div>
+              <div class="menu">
+                <h4>Gado-Gado</h4>
+                <p class="food-desc">Mix steamed vegetables, and rice cake serred with peanut sauce and cracker</p>
+                <div class="price">
+                  <h4>55K</h4>
+                </div>
+              </div>
+            </div>
+            <!-- End: Left Menu -->
+
+            <!-- Start: Right Menu -->
+            <div class="right col-lg-5 px-0">
+              <div class="menu">
+                <h4>Tom Yung Kung</h4>
+                <p class="food-desc">Thai seafood soup with button mushroom and kaffir line leaf</p>
+                <div class="price">
+                  <h4>55K</h4>
+                </div>
+              </div>
+              <div class="menu">
+                <h4>Gado-Gado</h4>
+                <p class="food-desc">Mix steamed vegetables, and rice cake serred with peanut sauce and cracker</p>
+                <div class="price">
+                  <h4>55K</h4>
+                </div>
+              </div>
+            </div>
+            <!-- End: Right Menu -->
+          </div>
+        </div>
+        <!-- Ends: Menus Beverages Four -->
       </div>
     </section>
     <!-- End: Menu Beverages Section -->
 
     <!-- Start: Jumbotron -->
-    <div class="jumbotron jumbotron-fluid">
+    <div class="jumbotron jumbotron-reverse jumbotron-fluid">
       <div class="container"></div>
     </div>
     <!-- End: Jumbotron -->
@@ -339,9 +487,9 @@
           minus ad iure odio similique, maiores odit, recusandae optio saepe vel repudiandae vitae error nihil!
         </p>
         <div class="socials">
-          <a href="#"><ion-icon size="large" name="logo-facebook"></ion-icon></a>
-          <a href="#"><ion-icon size="large" name="logo-instagram"></ion-icon></a>
-          <a href="#"><ion-icon size="large" name="logo-twitter"></ion-icon></a>
+          <a href="#" target="_blank"><ion-icon size="large" name="logo-facebook"></ion-icon></a>
+          <a href="#" target="_blank"><ion-icon size="large" name="logo-instagram"></ion-icon></a>
+          <a href="#" target="_blank"><ion-icon size="large" name="logo-twitter"></ion-icon></a>
         </div>
       </div>
     </footer>
@@ -365,6 +513,8 @@
       crossorigin="anonymous"
     ></script>
     <script src="https://unpkg.com/ionicons@5.1.2/dist/ionicons.js"></script>
-    <script src="./assets/js/main.js"></script>
+    <script src="./assets/js/menufood.js"></script>
+    <script src="./assets/js/menubeverages.js"></script>
+    <script src="./assets/js/linkstate.js"></script>
   </body>
 </html>
