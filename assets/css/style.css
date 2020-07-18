@@ -28,6 +28,10 @@ body img {
   width: 100%;
 }
 
+.nav-logo {
+  width: 34px;
+}
+
 .nav-item {
   list-style: none;
   position: relative;
