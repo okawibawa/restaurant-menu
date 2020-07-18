@@ -1,3 +1,4 @@
+// Foods
 const containfood = document.getElementById('food-container');
 
 // Links Food
@@ -11,6 +12,7 @@ for (let i = 0; i < links.length; i++) {
   });
 }
 
+// Beverages
 const contain = document.getElementById('beverages-container');
 
 // Links Drink
