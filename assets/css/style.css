@@ -14,6 +14,7 @@
 
 nav {
   background-color: var(--main-color) !important;
+  text-align: right !important;
 }
 
 button {
@@ -99,7 +100,7 @@ h4 {
 .food-desc {
   font-family: 'Playfair Display', Arial, Helvetica, sans-serif;
   font-style: italic;
-  font-size: 14px;
+  font-size: 12px;
 }
 
 .menu {
