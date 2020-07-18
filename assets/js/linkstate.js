@@ -1,17 +1,25 @@
+const containfood = document.getElementById('food-container');
+
 // Links Food
-const linkfood = document.getElementsByClassName('.link-food');
+const links = document.getElementsByClassName('link');
 
-// Links Beverages
-// const linkBevOne = document.getElementById('link-bev-one');
-// const linkBevTwo = document.getElementById('link-bev-two');
-// const linkBevThree = document.getElementById('link-bev-three');
-// const linkBevFour = document.getElementById('link-bev-four');
-
-// Link Food
-for (let i = 0; i < linkfood.length; i++) {
-  linkfood[i].addEventListener('click', (e) => {
-    var current = document.getElementsByClassName('active-link');
+for (let i = 0; i < links.length; i++) {
+  links[i].addEventListener('click', function () {
+    let current = document.getElementsByClassName('active-link');
     current[0].className = current[0].className.replace(' active-link', '');
+    this.className += ' active-link';
+  });
+}
+
+const contain = document.getElementById('beverages-container');
+
+// Links Drink
+const linkdrinks = contain.getElementsByClassName('link-bev');
+
+for (let i = 0; i < linkdrinks.length; i++) {
+  linkdrinks[i].addEventListener('click', function () {
+    let current = document.getElementsByClassName('active-link');
+    current[1].className = current[1].className.replace(' active-link', '');
     this.className += ' active-link';
   });
 }
