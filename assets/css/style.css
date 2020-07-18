@@ -123,7 +123,7 @@ h5 {
 
 .price {
   position: absolute;
-  top: 4px;
+  top: 5px;
   right: 0;
 }
 
@@ -154,7 +154,7 @@ h5 {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  height: 400px;
+  width: 100%;
 }
 
 .jumbotron-reverse {
