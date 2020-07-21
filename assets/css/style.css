@@ -63,7 +63,10 @@ body img {
 
 .nav-link {
   font-family: 'Playfair Display', Arial, Helvetica, sans-serif;
-  font-size: 17px;
+  font-size: 14px;
+  border: 1px solid var(--accent-color);
+  display: inline-block;
+  border-radius: 20px;
 }
 
 .top-menu {
@@ -140,6 +143,10 @@ h5 {
   color: var(--accent-color) !important;
 }
 
+.nav-item-list {
+  padding-bottom: 10px;
+}
+
 .nav-item-list + .nav-item-list {
   margin-left: 10px !important;
 }
@@ -155,6 +162,7 @@ h5 {
   background-position: center;
   background-repeat: no-repeat;
   width: 100%;
+  height: 300px;
 }
 
 .jumbotron-reverse {
@@ -185,6 +193,10 @@ footer p {
 /* Menu Animation */
 .menus {
   display: none;
+}
+
+h4 {
+  width: 80%;
 }
 
 .active {
@@ -240,5 +252,11 @@ footer p {
   .nav-item:first-child .nav-link::before {
     content: '';
     border-left: none;
+  }
+
+  .nav-link {
+    font-family: 'Playfair Display', Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    border: none;
   }
 }
