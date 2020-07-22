@@ -67,6 +67,7 @@ body img {
   border: 1px solid var(--accent-color);
   display: inline-block;
   border-radius: 20px;
+  padding: 6px 12px !important;
 }
 
 .top-menu {
@@ -107,6 +108,8 @@ h1 {
 
 h4 {
   font-weight: bold !important;
+  font-size: 1.4rem !important;
+  margin-bottom: 0 !important;
 }
 
 h5 {
@@ -118,6 +121,7 @@ h5 {
   font-family: 'Playfair Display', Arial, Helvetica, sans-serif;
   font-style: italic;
   font-size: 12px;
+  margin-bottom: 0;
 }
 
 .menu {
@@ -188,6 +192,10 @@ footer p {
 
 .socials a ion-icon:hover {
   color: var(--accent-color);
+}
+
+.menu {
+  margin-bottom: 15px;
 }
 
 /* Menu Animation */
