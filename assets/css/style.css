@@ -184,6 +184,7 @@ footer p {
   max-width: 690px;
   margin: auto;
   margin-bottom: 20px;
+  color: var(--accent-color) !important;
 }
 
 .socials a:nth-child(2) {
